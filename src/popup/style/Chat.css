@@ -1,0 +1,42 @@
+#chat {
+  #messages {
+    @apply flex-1 flex gap-3 flex-col overflow-y-auto overflow-x-hidden;
+    @apply p-3;
+
+    .message:first-child {
+      @apply mt-auto;
+    }
+
+    .message.assistant {
+      @apply mr-auto text-left bg-base-300;
+    }
+
+    .message.user {
+      @apply ml-auto text-right bg-base-200;
+    }
+
+    .message.system {
+      @apply mx-auto text-center bg-base-300 opacity-50;
+    }
+
+    .message {
+      @apply p-2 rounded-md max-w-[90%] w-fit;
+
+      progress {
+        @apply progress w-full progress-accent;
+      }
+    }
+  }
+
+  #editor {
+    @apply flex gap-2 p-2 shadow-md bg-neutral border-t-2 border-neutral-focus;
+
+    input[type='text'] {
+      @apply input bg-neutral text-neutral-content placeholder:text-neutral-content placeholder:text-opacity-80 input-sm flex-1;
+    }
+
+    button {
+      @apply btn btn-ghost text-neutral-content btn-square btn-sm;
+    }
+  }
+}
