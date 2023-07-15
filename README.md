@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="800" height="500" src="https://github.com/devman-AI/chatGPTAtGoogleExtension/media/screen.png?raw=true">
+  <img width="800" height="500" src="https://github.com/devman-AI/chatGPTAtGoogleExtension/tree/master/media/screen.png?raw=true">
 </p>
 
 An extension that allows you to make ChatGPT about the contents of the currently visited website.
